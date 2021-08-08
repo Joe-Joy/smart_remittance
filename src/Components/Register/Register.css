@@ -1,0 +1,37 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .row {
+    width: 100%;
+    overflow: hidden;
+  }
+  .login_page {
+    margin: 0px;
+    padding: 0;
+    margin-left: auto;
+  }
+  .welcome_message {
+    background-color: #060668;
+    padding-bottom: 294px;
+    color: white;
+  }
+  .welcome_message h4 {
+    font-weight: bold;
+    padding: 20px 30px;
+  }
+  .welcome_message h5 {
+    padding: 0 30px;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .welcome_message p {
+    padding: 10px 30px;
+  }
+  .learn {
+    color: #4cd3fe;
+    padding: 10px 30px;
+  }
+  

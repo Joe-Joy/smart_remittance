@@ -1,0 +1,18 @@
+.heading {
+  padding: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  line-height: 36px;
+  color: #3f51b5;
+  font-weight: 510;
+}
+
+.justify-content-end {
+  display: inline-block;
+  float: right;
+  padding: auto;
+}
+.justify-content-end a {
+  padding: 30px;
+  font-family: Manrope;
+}
