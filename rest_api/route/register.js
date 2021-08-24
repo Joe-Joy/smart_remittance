@@ -8,11 +8,14 @@ router.get("/", (req, res) => {
 });
 
 router.post("/registerLogin", (req, res, next) => {
-  var queryOne = `INSERT INTO register (email, password, confirm_password) VALUES ('${req.body.email}','${req.body.password}','${req.body.confirm_password}')`;
-  console.log(queryOne);
+  var queryOne = `INSERT INTO register (email, mobile_number) VALUES ('${req.body.email}','${req.body.mobile_number}')`;
   writeSql.query(queryOne, (error, results, fields) => {
     if (error) res.status(400).json({ success: false, message: error.code });
-    res.send({ success: true, message: "successfully register registrationed", results: results});
+    res.send({
+      success: true,
+      message: "successfully register registrationed",
+      results: results,
+    });
   });
 });
 
@@ -21,7 +24,11 @@ router.get("/getRegister", (req, res) => {
   console.log(query);
   readSql.query(query, (err, result, fields) => {
     if (err) res.status(400).json({ success: false, message: err.code });
-    res.send({success: true, message: "register details successfully showned", results: result});
+    res.send({
+      success: true,
+      message: "register details successfully showned",
+      results: result,
+    });
   });
 });
 

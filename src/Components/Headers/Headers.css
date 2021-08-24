@@ -1,23 +1,28 @@
 body {
-  margin: 0 50px;
   font-family: Sofia Pro, sans-serif;
 }
-.heading {
-  padding: 10px;
-  font-size: 13px;
-  cursor: pointer;
-  line-height: 36px;
-  color: #3f51b5;
-  font-weight: 510;
+.home_page {
+  margin: 0 50px;
+}
+.heading{
+  margin-bottom: 40px;
+}
+.mainlogo img{
+  width: 150px; 
+  top:10px;
 }
 .justify-content-end {
-  display: inline-block;
-  float: right;
-  padding: auto;
+  list-style: none;
 }
-.navbar-text {
-  margin-top: 8px;
+.justify-content-end li{
+  float: right;
+  padding: 5px;
 }
 .justify-content-end a {
-  padding: 0px 30px;
+  padding: 0 20px;
+font-weight: bold;
+color: #3f51b5;
+font-size: 10px;
+cursor: pointer;
+
 }

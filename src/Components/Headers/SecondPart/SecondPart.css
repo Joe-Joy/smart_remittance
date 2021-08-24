@@ -1,93 +1,66 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  /* margin-bottom: 100px; */
-  padding: 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* secondpart left */
+.secondPart_left {
+  margin-left: 20px;
 }
-.row {
-  /* width: 100%; */
-  /* overflow: hidden; */
-}
-.login_page {
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-}
-.login_welcome_message {
-  background-color: #060668;
-  color: white;
-  padding-bottom: 183px;
-}
-.login_welcome_message h4 {
+.secondPart_left h4 {
   font-weight: bold;
-  padding: 20px 30px;
-}
-.login_welcome_message h5 {
-  padding: 0 30px;
-  font-weight: bold;
-  font-size: 35px;
-}
-.login_welcome_message p {
-  padding: 10px 30px;
-}
-.learn {
+  padding-bottom: 0;
+}  
+.learn_secondPart span {
   color: #4cd3fe;
-  padding: 10px 30px;
 }
 
-/* login form */
-.login_form {
-  padding: 10px 50px;
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  padding: 20px;
+  margin: -40px 40px;
 }
-h4 {
-  padding-bottom: 20px;
-}
-.remove_icon {
-  padding-left: 35px;
-}
-.remove_icon i {
-  margin-left: 200px;
-  font-size: 15px;
+.carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
   cursor: pointer;
-}
-.form-details {
-  font-size: 8px;
-}
-.form-group {
-  padding: 15px 0px;
-}
-.btn {
-  border-radius: 20px;
-  width: 350px;
-  text-align: center;
-  padding: 13px;
-  background: #0e7fff !important;
-  color: #fff !important;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.16) !important;
-}
-.help-details {
-  color: #0076fe;
-  font-size: 10px;
+  background-color: #00f !important;
+  margin: 8px;
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transition: opacity 0.6s ease;
+  text-indent: -999px;
 }
 
-/* ---------------------- */
+.logo {
+  width: 700px;
+}
+
+/* secondpart right */
 .input100 {
   outline: none;
   border: none;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid darkgrey;
 }
-
 textarea {
   outline: none;
   border: none;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid darkgrey;
 }
 
 textarea:focus,
 .input100:focus {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid darkgrey;
 }
-
 .input100:focus::-webkit-input-placeholder {
   color: transparent;
 }
@@ -139,7 +112,6 @@ textarea::-moz-placeholder {
 textarea:-ms-input-placeholder {
   color: #999999;
 }
-
 label {
   display: block;
   margin: 0;
@@ -169,7 +141,6 @@ label {
   padding-left: 5px;
   left: 0;
   top: 30px;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -193,9 +164,6 @@ label {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
-
-/*---------------------------------------------*/
-
 .focus-input100 {
   position: fixed;
   display: block;
@@ -206,12 +174,10 @@ label {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-
   -webkit-transform: scaleX(1.1) scaleY(1.3);
   -moz-transform: scaleX(1.1) scaleY(1.3);
   -ms-transform: scaleX(1.1) scaleY(1.3);
@@ -222,7 +188,6 @@ label {
 .input100:focus + .focus-input100 {
   visibility: visible;
   opacity: 1;
-
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -233,7 +198,6 @@ label {
 .eff-focus-selection {
   visibility: visible;
   opacity: 1;
-
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -248,4 +212,44 @@ label {
 .input100:focus + .focus-input100 + .label-input100 {
   top: 14px;
   font-size: 13px;
+}
+.right{
+padding-left:120px;
+}
+.secondPart_form {
+  margin: 0px 20px;
+  height: 230px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+.secondPart_form label {
+  color: darkgrey;
+  font-size: 10px;
+  padding: 5px;
+}
+.secondPart_form input {
+  padding: 5px;
+  font-weight: bold;
+  width: 400px;
+}
+.aus_logo {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  margin-left: 345px;
+}
+.aus_logo img {
+  width: 15px;
+  height: 10px;
+}
+.btn {
+  margin: 15px 0px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 13px;
+  background: #0e7fff !important;
+  color: #fff !important;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.16) !important;
 }

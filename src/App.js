@@ -3,23 +3,18 @@ import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Headers from "./Components/Headers/Headers";
-
-import Mainlogin from "./Components/Login/Mainlogin";
-import MainRegister from "./Components/Register/MainRegister";
-import MainSecondPart from "./Components/Headers/SecondPart/MainSecondPart";
-import SecondPartLeft from "./Components/Headers/SecondPart/SecondPartLeft";
-import SecondPartRight from "./Components/Headers/SecondPart/SecondPartRight";
+import Login from "./Components/Login/Login";
+import Register from "./Components/Register/Register";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import './App.scss';
 function App() {
-  // const token = localStorage.getItem("user");
-
-  // const auth = token === null ? false : true;
   return (
     <Router>
       <Container>
-        <Headers exact path="/" />
         <Switch>
-          <Route exact path="/Login" component={Mainlogin} />
-          <Route exact path="/Register" component={MainRegister} />
+          <Headers exact path="/" />
+          <Route exact path="/Login" component={Login} />
+          <Route exact path="/Register" component={Register} />
         </Switch>
       </Container>
     </Router>
